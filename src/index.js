@@ -1,8 +1,14 @@
 import * as React from 'react'
 import ReactDOM from "react-dom"
+import React from "react";
 
 // 1. import `ChakraProvider` component
 import { ChakraProvider, ColorModeScript, CSSReset } from "@chakra-ui/react";
+import MainApp from "./components/MainApp";
+import { GraphContext, UserContext } from "./Contexts";
+import { customTheme } from "./theme";
+import useGraph from "./useGraph";
+import useLogin from "./useLogin";
 
 const App = () => {
     const loginHook = useLogin();
